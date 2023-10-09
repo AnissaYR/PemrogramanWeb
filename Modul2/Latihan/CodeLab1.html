@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLab1</title>
+</head>
+<body>
+    <h1>Penjumlahan Bilangan</h1>
+  
+    <div>
+    <!-- Input field untuk bilangan pertama -->
+      <label for="bilangan1">Bilangan Pertama:</label>
+      <input type="text" id="bilangan1" placeholder=" ">
+    
+    <!-- Input field untuk bilangan kedua -->
+      <label for="bilangan2">Bilangan Kedua:</label>
+      <input type="text" id="bilangan2" placeholder=" ">
+    </div>
+    
+    <!-- Tombol untuk menjalankan penjumlahan -->
+    <button onclick="jumlahkan()">Jumlahkan</button>
+
+    <!-- Tombol untuk mengulang input -->
+    <button onclick="ulang()">Ulang</button>
+  
+    <script>
+        // Fungsi untuk melakukan penjumlahan
+        function jumlahkan() {
+            // Mengambil nilai dari input field
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            
+            // Melakukan penjumlahan
+            var hasil = bilangan1 + bilangan2;
+            
+            // Menampilkan hasil penjumlahan dalam sebuah alert
+            alert("Hasil penjumlahan: " + hasil);
+        }
+
+        // Fungsi untuk mengulang input
+        function ulang() {
+            // Menghapus nilai dari input field
+            document.getElementById("bilangan1").value = "";
+            document.getElementById("bilangan2").value = "";
+
+            // Menghapus hasil penjumlahan
+            alert("Hasil dihapus.");
+        }
+    </script>
+</body>
+</html>
