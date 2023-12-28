@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+#aplikasi {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 5px;
+    background-color: yellow;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+}
+
+label {
+    display: block;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+
+button {
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: green;
+}
+
+button:hover {
+    color: white;
+    background-color: blue;
+}
+
