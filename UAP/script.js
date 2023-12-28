@@ -27,7 +27,7 @@ function pembelian(){
     }
 
     const kembalian = bayar-total;
-    alert(kembalian <=0 ? `Kembalian anda = Rp${kembalian}` : `Kembalian anda =${kembalian}`);
+    alert(kembalian <=0 ? `Kembalian anda = Rp${kembalian}` : `Kembalian anda = Rp${kembalian}`);
 }
 
 listBarang();
